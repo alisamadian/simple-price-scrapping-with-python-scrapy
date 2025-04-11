@@ -1,0 +1,31 @@
+ - ** video 1 **
+ - what is scraping?
+ - what is scrapy made of?
+ - introduce clean environment
+ - install python 3.10
+ - install code editor trae
+ - install scrapy
+ - go to documentation and review it
+ - explain what is spider?
+ - run the spider example
+ 
+ - ** video 2 **
+ - a price grabber for woocomerce websites
+ - bulding a simple spider on a wordpress shop
+
+ - ** video 3 **
+ - flexible pagination detection
+ - extend to shopify and custom shop with config file
+ - update spider with new function argument method
+
+ - ** video 4 **
+ - add more fields like images
+ - checking best practices in custom settings
+ - scrapy usre agent
+ - introduce scrapy projects and scrapyd and where to go
+ - 
+ - 
+ - 
+ - 
+ - 
+ - 

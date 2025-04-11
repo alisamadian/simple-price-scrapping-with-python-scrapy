@@ -93,7 +93,8 @@ class ProductSpider(scrapy.Spider):
             # The style of selecting is easy to understand based on the structure on developer options
             name = product.css("h3.wd-entities-title a::text").get()
             price = product.css("span.woocommerce-Price-amount bdi::text").get()
-            
+            url = product.css("a::attr(href)").get()
+
             # Only process items where both name and price were found.
             # So we skip the not available products.
             # But you should handle the on sale products which have different elements for the price.
@@ -115,7 +116,8 @@ class ProductSpider(scrapy.Spider):
                     # Yield the item to be processed by Scrapy's pipeline
                     yield {
                         "name": name,
-                        "price": price
+                        "price": price,
+                        "url": url
                         # You could add more fields here such as:
                         # "url": product.css("a::attr(href)").get(),
                         # "image": product.css("img::attr(src)").get(),
